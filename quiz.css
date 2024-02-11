@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 1px;
+}
+
+#container {
+    width: 99.8vw;
+    height: 45.1vw;
+    background: linear-gradient(#8f94dc, #020f96);
+    display:flex;
+    justify-content: center;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    position:absolute;
+    margin-top: 414px;
+    
+}
+
+#question-container {
+    position: absolute;
+    margin-top: 210px;
+}
+
+.question {
+    border: 3px solid black;
+    width: 1000px;
+    height: 190px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+}
+
+.answer {
+    border: 3px solid black;
+    width: 500px;
+    height: 90px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* .answer:hover {
+    background: linear-gradient(#8288d9, #020f96);
+    border: 3px solid black;
+    width: 500px;
+    height: 90px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+.answer:active {
+    background: linear-gradient(#020f96, #8288d9);
+    border: 3px solid black;
+    width: 500px;
+    height: 90px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pass {
+    background-color: rgb(26, 211, 26);
+}
+
+.wrong {
+    background-color: red;
+}
+#progress {
+    background: linear-gradient(rgb(172, 150, 9), rgba(216, 225, 100, 0.886));
+    position: absolute;
+    margin-left: 1290px;
+    width: 240px;
+    height: 99.7%;
+    border: 3px solid black;
+    font-size: 25px;
+}
+
+#hints {
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.hint {
+    border: 3px solid black;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: linear-gradient(#8288d9, #020f96);
+}
+
+.hint:active {
+    border: 3px solid black;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: linear-gradient(#020f96, #8288d9);
+}
+
+.diag {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M1 0 L0 1 L99 100 L100 99' fill='black' /><path d='M0 99 L99 0 L100 1 L1 100' fill='black' /></svg>");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: 100% 100%, auto;
+}
+
+.result {
+    margin-top: 399px;
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    background: transparent;
+    border: 4px solid black;
+    border-radius: 5px;
+}
+
+.result:active {
+    background-color: rgb(0, 0, 8);
+    margin-top: 399px;
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    border: 4px solid black;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+ol {
+    transform: rotate(180deg);
+    margin: 20px 0px 0px 40px;
+    padding: 5px;
+    padding-left:1em
+}
+ol > li {
+    transform: rotate(-180deg);
+    padding-left:2em
+}
+
+.active {
+    background-color: orange;
+}
+
+.gameover {
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 50px;
+}
+
+.usedHint {
+    pointer-events:none;
+}
+
